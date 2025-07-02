@@ -1,89 +1,108 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+<!DOCTYPE html><html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="超级无敌super power pro maxHyperSynapse Network Phira多人游戏服务器提供商">
-    <title>超级无敌super power pro maxHyperSynapse Network Phira多人游戏服务器提供商</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HyperSynapse Network</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin:0; padding:0; }
+    html, body { width:100%; height:100%; font-family: 'Segoe UI', sans-serif; background:#000; color:#eee; overflow-x: hidden; scroll-behavior: smooth; }
+    body { position: relative; }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      backdrop-filter: blur(12px);
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1000;
+    }
+    header img {
+      height: 48px;
+    }
+    .hero {
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(4px);
+      z-index: 1;
+    }
+    .parallax-bg {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 120%;
+      background: url('https://source.unsplash.com/1600x900/?cyberpunk,network') center center / cover no-repeat;
+      transform: translateZ(-1px) scale(1.5);
+      z-index: 0;
+    }
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 2rem;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    .hero-content h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      animation: fadeInRight 1s ease-out;
+      text-align: right;
+    }
+    .tagline {
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: #ccc;
+      animation: fadeInRight 1.5s ease-out;
+      text-align: right;
+    }
+    @keyframes fadeInRight {
+      from { opacity: 0; transform: translateX(40px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+  </style>
 </head>
 <body>
-    <header class="header">
-        <a href="/" class="logo">
-            <img src="assets/img/logo.png" alt="Firefly AI">
-            <span>Firefly AI</span>
-        </a>
-        <nav class="nav">
-            <a href="/" class="active">首页</a>
-            <a href="open-webui.html">智能交互</a>
-            <a href="alist.html">云存储</a>
-            <a href="status-checker.html">节点状态</a>
-            <a href="contact.html">支持</a>
-        </nav>
-        <button class="mobile-menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </header>
-
-    <section class="hero">
-        <canvas id="particle-canvas"></canvas>
-        <div class="hero-content">
-            <h1>开启智能未来</h1>
-            <p class="subtitle">多模态AI交互 × 分布式云服务 × 企业级安全</p>
-            <div class="cta-buttons">
-                <a href="open-webui.html" class="cta-button">立即体验</a>
-                <a href="#features" class="cta-button outline">了解优势</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="features" class="features">
-        <div class="feature-card">
-            <div class="icon">🚀</div>
-            <h3>极速响应</h3>
-            <p>全球分布式节点网络，平均延迟&lt;50ms</p>
-        </div>
-        <div class="feature-card">
-            <div class="icon">🔒</div>
-            <h3>军用级安全</h3>
-            <p>AES-256加密传输，GDPR合规保障</p>
-        </div>
-        <div class="feature-card">
-            <div class="icon">🧠</div>
-            <h3>智能扩展</h3>
-            <p>支持LLaMA3、GPT-4等前沿模型</p>
-        </div>
-    </section>
-
-    <!-- 统一页脚 -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>产品服务</h4>
-                <a href="open-webui.html">Open-webui</a>
-                <a href="alist.html">AList云存储</a>
-                <a href="status-checker.html">节点网络</a>
-            </div>
-            <div class="footer-section">
-                <h4>技术支持</h4>
-                <a href="contact.html">文档中心</a>
-                <a href="status-checker.html">状态监控</a>
-                <a href="contact.html">联系我们</a>
-            </div>
-            <div class="footer-section">
-                <h4>法律信息</h4>
-                <a href="#">服务条款</a>
-                <a href="#">隐私政策</a>
-                <span>浙ICP备它不让我备：(</span>
-            </div>
-        </div>
-        <div class="copyright">
-        © 2025 Firefly AI. 保留所有权利。
-        </div>
-    </footer>
-
-    <script src="scripts.js"></script>
-</body>
+  <header>
+    <img src="https://via.placeholder.com/140x40?text=HyperSynapse" alt="Logo" />
+  </header>  <section class="hero">
+    <div class="parallax-bg"></div>
+    <div id="particles-js"></div>
+    <div class="hero-content">
+      <h1>HyperSynapse Network</h1>
+      <p class="tagline">免费 · 稳定 · 低延迟</p>
+      <p class="tagline">加入qq群1049578201获取服务器地址</p>
+    </div>
+  </section>  <!-- particles.js script -->  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {"value": 40},
+        "size": {"value": 3},
+        "color": {"value": "#00d4ff"},
+        "line_linked": {"enable": true, "distance": 120, "color": "#00d4ff", "opacity": 0.4, "width": 1},
+        "move": {"enable": true, "speed": 1}
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {"onhover": {"enable": true, "mode": "repulse"}},
+        "modes": {"repulse": {"distance": 80}}
+      }
+    });
+  </script></body>
 </html>
